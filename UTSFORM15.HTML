@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Registrasi</title>
+    <style>
+        body{
+            font-family: Verdana, Tahoma, sans-serif;
+        }
+        .jarak{
+            margin-left: 5%;
+            margin-right: 20%;
+        }
+        .letak{
+            margin-left: 6%;
+        }
+    input, select, textarea{
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+td{
+    padding: 6px 10px;
+}
+
+label{
+    display: block;
+    text-align: end;
+    font-size: 14px;
+}
+
+button {
+    padding: 6px 10px;
+    border: 0;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    color: white;
+}
+.btn-blue{
+    background-color: cornflowerblue;
+}
+
+.btn-red{
+    background-color: crimson;
+}
+
+.tombol{
+    margin-left: 10%;
+}
+    </style>
+</head>
+<body>
+    <form action="#">
+        <fieldset class="jarak">
+            <legend>Form Registrasi Tempat Rekreasi Wisata</legend>
+            <table class="letak">
+                <tr>
+                    <td>
+                        <label for="namatempatwisata">Nama Tempat Wisata</label>
+                    </td>
+                    <td>
+                        <textarea name="namatempatwisata" id="namatempatwisata" cols="80" rows="1"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="jeniswisata">Jenis Wisata</label>
+                    </td>
+
+                    <td>
+                        <select name="jeniswisata" id="jeniswisata">
+                            <option value="">- Tempat Wisata</option>
+                            <option value="Taman">Taman</option>
+                            <option value="Kebun Binatang">Kebun Binatang</option>
+                            <option value="Danau">Danau</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="deskripsiwisata">Deskripsi Wisata</label>
+                    </td>
+    
+                    <td>
+                        <textarea name="deskripsiwisata" id="deskripsiwisata" cols="80" rows="4"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                    <label for="kontakperson">Kontak Person</label>
+                </td>
+                    <td>
+                        <input type="text" name="kontakperson" id="kontakperson">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="telepon">No Hp/Telepon:</label>
+                    </td>
+                    <td>
+                        <input type="number" name="telepon" id="telepon">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                    <label for="email">Email</label>
+                </td>
+                    <td>
+                        <input type="text" name="email" id="email">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="alamatweb">Alamat Web :</label>
+                    </td>
+    
+                    <td>
+                        <textarea name="alamatweb" id="alamatweb" cols="60" rows="1"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="alamatlengkap">Alamat Lengkap :</label>
+                    </td>
+    
+                    <td>
+                        <textarea name="alamatlengkap" id="alamatlengkap" cols="80" rows="3"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Latitude/Longitude :</td>
+                    <td>
+                        <input type="text" name="latitude/longitude">
+                    </td>
+                </tr>
+            </table>
+            
+            <table class="tombol">
+                <tr>
+                    <td></td>
+                    <td>
+                        <button type="submit" class="btn-blue">Daftar</button>
+                        <button type="reset" class="btn-red">Batal</button>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
